@@ -1,0 +1,32 @@
+{
+  "name": "rogue_rabbitmq",
+  "version": "1.0.0",
+  "description": "rabbitmq for Rogue",
+  "main": "index.js",
+  "scripts": {
+    "start" : "nodemon --exec babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techyoofoo/rogue_rabbitmq.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techyoofoo/rogue_rabbitmq/issues"
+  },
+  "homepage": "https://github.com/techyoofoo/rogue_rabbitmq#readme",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "nodemon": "^1.19.3"
+  }
+}
