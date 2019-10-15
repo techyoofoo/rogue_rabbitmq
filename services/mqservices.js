@@ -12,6 +12,9 @@ rabbitConn(function(conn){
 });
 
 export const publishToQueue = async (queueName, data) => {
+    ch.assertQueue(queueName, {
+        durable: true
+    });
     ch.sendToQueue(queueName, new Buffer(data), {persistent: true});
 }
 
