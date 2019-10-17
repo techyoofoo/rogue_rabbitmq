@@ -1,4 +1,4 @@
-var amqp = require('amqplib/callback_api')
+import amqp from 'amqplib/callback_api'
 
 var opts = {
   cert: "",
